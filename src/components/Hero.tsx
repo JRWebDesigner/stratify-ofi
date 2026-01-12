@@ -45,7 +45,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-600">
+    <section id="inicio" className="relative min-h-[125dvh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-600">
       <div className="absolute inset-0 bg-black opacity-20"></div>
 
       <div className="absolute top-20 left-10 floating-icon">
@@ -87,7 +87,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+        <div className="mt-7 grid grid-cols-3 gap-8 text-white">
           <div className="hero-stat">
             <div className="text-4xl font-bold mb-2">5+</div>
             <div className="text-blue-200">Años de Experiencia</div>

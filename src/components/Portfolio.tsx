@@ -3,15 +3,38 @@ import { animate } from 'animejs';
 import { ExternalLink } from 'lucide-react';
 
 const projects = [
-  /*
+  /*{
+    title: 'Restaurante Digital',
+    category: 'Sitio Web',
+    description: 'Sitio web con menú digital, reservas online y sistema de pedidos.',
+    image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800',
+    color: 'from-red-500 to-orange-500',
+    url:'https://importlilimlab.com'
+  },
   {
     title: 'Restaurante Digital',
     category: 'Sitio Web',
     description: 'Sitio web con menú digital, reservas online y sistema de pedidos.',
     image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800',
-    color: 'from-red-500 to-orange-500'
-  }
-  */
+    color: 'from-green-500 to-blue-500',
+    url:'https://importlilimlab.com'
+  },
+  {
+    title: 'Restaurante Digital',
+    category: 'Sitio Web',
+    description: 'Sitio web con menú digital, reservas online y sistema de pedidos.',
+    image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800',
+    color: 'from-violet-500 to-pink-500',
+    url:'https://importlilimlab.com'
+  },
+  {
+    title: 'Restaurante Digital',
+    category: 'Sitio Web',
+    description: 'Sitio web con menú digital, reservas online y sistema de pedidos.',
+    image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800',
+    color: 'from-yellow-500 to-orange-500',
+    url:'https://importlilimlab.com'
+  }*/
 ];
 
 export default function Portfolio() {
@@ -101,7 +124,9 @@ export default function Portfolio() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <a
+              href='#'
+              target="_blank"
               key={index}
               className="portfolio-card group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow cursor-pointer opacity-0"
               onMouseEnter={handleHover}
@@ -133,7 +158,7 @@ export default function Portfolio() {
                   {project.description}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
